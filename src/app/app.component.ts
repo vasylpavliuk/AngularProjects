@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'resume';
+  contacts = [
+    {
+      info: '066 508 6936',
+      logo: 'fas fa-phone-alt'
+    },
+    {
+      info: 'vasylpavliuk007@gmail.com',
+      logo: 'fas fa-envelope'
+    },
+    {
+      info: 'Ivano-Frankivsk',
+      logo: 'fas fa-map-marker-alt'
+    }
+  ];
+
 }

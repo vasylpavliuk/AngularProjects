@@ -1,0 +1,14 @@
+.container {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    max-width: 70vw;
+}
+
+.contact {
+    margin-bottom: 50px;
+}
