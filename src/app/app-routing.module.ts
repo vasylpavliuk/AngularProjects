@@ -5,15 +5,34 @@ import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
-  { path: 'elements', loadChildren: () => import('./elements/elements.module').then( m => m.ElementsModule) },
-  { path: 'collections', loadChildren: () => import('./collections/collections.module').then( m => m.CollectionsModule) },
-  { path: 'views', loadChildren: () => import('./views/views.module').then( m => m.ViewsModule)},
+  {
+    path: 'elements',
+    loadChildren: () =>
+      import('./elements/elements.module').then((m) => m.ElementsModule),
+  },
+  {
+    path: 'collections',
+    loadChildren: () =>
+      import('./collections/collections.module').then(
+        (m) => m.CollectionsModule
+      ),
+  },
+  {
+    path: 'views',
+    loadChildren: () =>
+      import('./views/views.module').then((m) => m.ViewsModule),
+  },
+  {
+    path: 'modules',
+    loadChildren: () =>
+      import('./modules/modules.module').then((m) => m.ModulesModule),
+  },
   { path: '', component: HomeComponent },
-  { path: '**', component: NotFoundComponent }
+  { path: '**', component: NotFoundComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

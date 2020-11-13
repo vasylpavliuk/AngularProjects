@@ -10,14 +10,16 @@ import { CompaniesComponent } from './companies/companies.component';
 import { PartnersComponent } from './partners/partners.component';
 import { TabsComponent } from './tabs/tabs.component';
 
-
 @NgModule({
-  declarations: [CollectionsHomeComponent, TableComponent, BiographyComponent, CompaniesComponent, PartnersComponent, TabsComponent],
-  imports: [
-    CommonModule,
-    CollectionsRoutingModule,
-    SharedModule
+  declarations: [
+    CollectionsHomeComponent,
+    TableComponent,
+    BiographyComponent,
+    CompaniesComponent,
+    PartnersComponent,
+    TabsComponent,
   ],
-  exports: []
+  imports: [CommonModule, CollectionsRoutingModule, SharedModule],
+  exports: [],
 })
-export class CollectionsModule { }
+export class CollectionsModule {}

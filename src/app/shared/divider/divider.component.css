@@ -1,3 +1,4 @@
-h1 {
-    margin-top: 25px;
+:host:not(:first-of-type) {
+  display: block;
+  margin-top: 25px;
 }
